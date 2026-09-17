@@ -1,7 +1,7 @@
 import  sys
-from tests import TESTS
+from tests_1 import TESTS
 
-#матричные операции 
+#матричные операции
 def mat_mult(A,B):
     #C[i][j] = A[i][0]*B[0][j] + A[i][1]*B[1][j] + ... + A[i][k-1]*B[k-1][j]
     n = len(A)
