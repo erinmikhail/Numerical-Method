@@ -89,6 +89,8 @@ def run_test(test_name: str) -> None:
     except Exception as err:
         print(f"\n Ошибка вычислений: {err}")
 
+    print("_" * 70 + "\n")
+
 
 
 def main() -> None:
