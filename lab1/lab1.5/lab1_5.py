@@ -135,7 +135,7 @@ def run_test(test_name: str, eps: float = 0.01) -> None:
 
     eigenvalues, iters, _ = qr_algorithm(A, eps=eps)
 
-    print(f"\n4. Найденные собственные значения (с точностью ε = {eps}, за {iters} итераций):")
+    print(f"\nНайденные собственные значения (с точностью ε = {eps}, за {iters} итераций):")
     for i, val in enumerate(eigenvalues):
         if isinstance(val, complex):
             sign = "+" if val.imag >= 0 else "-"

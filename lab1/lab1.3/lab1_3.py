@@ -114,13 +114,13 @@ def run_test(test_name: str, eps: float = 0.01) -> None:
     if not check_diag_dom(A):
         print("Строгое диагональное преобладание не выполняется.")
 
-    # 2. Вычисление точного (эталонного) решения
+    # Вычисление точ решения
     x_exact = exact_solve_gauss(A, b)
     print("\n3. Эталон решение:")
     for i, val in enumerate(x_exact):
         print(f"   x_exact[{i+1}] = {val:12.6f}")
 
-    # 3. Выполнение Итерационных методов
+    # Вып Итерационных методов
     try:
         x_simple, iter_simple = simple_iteration(A, b, eps=eps)
         x_seidel, iter_seidel = seidel_iteration(A, b, eps=eps)

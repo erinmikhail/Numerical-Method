@@ -125,7 +125,7 @@ def run_test(test_name: str, eps: float = 1e-4) -> None:
     n = len(A)
 
     print(f"Размерность матрицы: N = {n}")
-    print(f"1. Заданная точность вычислений ε = {eps}")
+    print(f"Заданная точность вычислений ε = {eps}")
 
     if not is_symmetric(A):
         print("Матрица не является симметричной! Метод Якоби неприменим.")
